@@ -43,12 +43,12 @@ def getTargetChannelId() -> int:
     # ***********************************************************
     # 指定カテゴリ(対象チャンネルが含まれたカテゴリ)の名前
 
-    category_id = INT_ID_OF_YOUR_CATEGORY  # カテゴリidを指定
+    category_id = 711238137598181396  # カテゴリidを指定
     target_category_name = client.get_channel(category_id).name
 
     # ***********************************************************
     # 指定したサーバにある全てのTextチャンネル一覧
-    all_channels = client.get_guild(INT_ID_OF_SERVER).text_channels
+    all_channels = client.get_guild(602423784946925568).text_channels
 
     # 全てのTextチャンネルから「指定カテゴリに属する最初のチャンネル」を探す
     for channel in all_channels:
@@ -65,4 +65,4 @@ def getTargetChannelId() -> int:
 
 
 # botとしてDiscordに接続(botのトークンを指定)
-client.run('TOKEN_OF_YOUR_BOT')
+client.run('605042341715378176')
